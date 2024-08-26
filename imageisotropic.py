@@ -34,16 +34,17 @@ transform_fn = A.Compose([
 ])
 
 # Load an image (for example, from a file)
-image_path = 'teste1w.png'
-image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)  # Load as grayscale if needed
+def isotropictimage(image):
+#image_path = 'teste1w.png'
+#image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)  # Load as grayscale if needed
 
 # Apply the transformations
-transformed = transform_fn(image=image)
-transformed_image_tensor = transformed['image']
-
+    transformed = transform_fn(image=image)
+    transformedi = transformed['image']
+    return transformedi
 # Convert tensor to PIL image
 
 
-cv2.imwrite('teste1seila.png', transformed_image_tensor)
+#cv2.imwrite('teste1seila.png', transformed_image_tensor)
 # Save or display the transformed image
 

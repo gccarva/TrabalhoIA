@@ -3,9 +3,7 @@ import torch
 import numpy as np 
 from windowing import apply_windowing
 # Load the image as a grayscale image (single channel)
-for i in range(2):
-    image_path = f'teste{i+1}.png'
-    image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+def windowimage(image):
     mean_value = np.mean(image)
     # Convert the image to a PyTorch tensor
     image_torch = torch.tensor(image, dtype=torch.float32)
@@ -25,5 +23,5 @@ for i in range(2):
     windowed_image_np = windowed_image_torch.numpy().astype(np.uint8)
 
     # Save or display the windowed image
-    cv2.imwrite(f'teste{i+1}w.png', windowed_image_np)
+    return windowed_image_np
 

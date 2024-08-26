@@ -106,16 +106,13 @@ transform_fn = A.Compose(
             ],
             p=0.9)
 
-# Load the image
+# Load the image#
 image_path = 'teste.png'
-image = cv2.imread(image_path)
-
+#image = cv2.imread(image_path)
+def transformimage(image):
 # Apply the transformation
-transformed = transform_fn(image=image)
-transformed_image = transformed['image']
-
+    transformed = transform_fn(image=image)
+    transformed_image = transformed['image']
+    return transformed_image
 # Save or display the image
-cv2.imwrite('testet.png', transformed_image)
-cv2.imshow('Transformed Image', transformed_image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+
