@@ -5,9 +5,9 @@ from pylabel import importer
 from pathlib import Path
 import os
 dataset = importer.ImportCoco(
-    path="./yolo_labels/labels.json", path_to_images="./yolo_labels/test/images")
-dataset.export.ExportToYoloV5(output_path="./yolo_labels/test/labels")
-pathlist = Path("./yolo_labels/train/labels").glob('**/*.txt')
+    path="./val_images/labels.json", path_to_images="./val_images/images")
+dataset.export.ExportToYoloV5(output_path="./val_images/labels")
+pathlist = Path("./val_images/labels").glob('**/*.txt')
 for path in pathlist:
     # because path is object not string
    # print(path)
@@ -18,4 +18,4 @@ for path in pathlist:
     with open(path_in_str, "w") as file:
         for linha in linhas:
             file.write(linha)
-os.remove("./yolo_labels/test/dataset.yaml")
+#os.remove("./yolo_labels/test/dataset.yaml")

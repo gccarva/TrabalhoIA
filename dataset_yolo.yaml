@@ -2,6 +2,6 @@ names:
   0: Sem Cancer
   1: Com Cancer
 nc: 2
-path:  ../../
-train: ../../
-val: ../../
+path:  ..
+train: ./ia/train_images/images
+val: ./ia/val_images/images

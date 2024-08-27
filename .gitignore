@@ -7,3 +7,10 @@ kaggle*
 *.png
 *.jpg
 example.json
+train_images
+val_images
+test_images
+nohup*
+*/labels.cache
+runs
+runs/*
