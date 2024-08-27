@@ -1,0 +1,29 @@
+{
+    "info": {
+        "year": "2024",
+        "version": "1.00",
+        "description": "CancerdeMama",
+        "contributor": "",
+        "url": "https://google.com/",
+        "date_created": "2024-01-30T08:01:37"
+    },
+    "licenses": [
+        {
+            "id": 1,
+            "name": "Attribution 4.0 International License",
+            "url": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    ],
+    "categories": [
+        {
+            "id": 0,
+            "name": "Sem Cancer",
+            "supercategory": null
+        },
+        {
+            "id": 1,
+            "name": "Com cancer",
+            "supercategory": null
+        }]
+        }
+    

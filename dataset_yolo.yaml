@@ -1,16 +1,7 @@
 names:
   0: Sem Cancer
-  1: Cancer
-  2: Enterobius vermicularis
-  3: Fasciolopsis buski
-  4: Hookworm egg
-  5: Hymenolepis diminuta #
-  6: Hymenolepis nana
-  7: Opisthorchis viverrine
-  8: Paragonimus spp
-  9: Taenia spp. egg
-  10: Trichuris trichiura #
-nc: 11
+  1: Com Cancer
+nc: 2
 path:  ../../
 train: ../../
 val: ../../
