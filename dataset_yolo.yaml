@@ -4,4 +4,5 @@ names:
 nc: 2
 path:  ..
 train: ./ia/train_images/images
-val: ./ia/val_images/images
+val: ./ia/test_images/images
+test: ./ia/val_images/images
