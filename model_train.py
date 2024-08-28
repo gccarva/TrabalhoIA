@@ -14,4 +14,4 @@ if (new == 1):
     model = YOLO('yolov8m.pt')
 else:
     model = YOLO("runs/detect/train/weights/last.pt")
-model.train(data="./dataset_yolo.yaml", epochs=50,batch=8,device="0")
+model.train(data="./dataset_yolo.yaml", epochs=50,batch=4,device="0")

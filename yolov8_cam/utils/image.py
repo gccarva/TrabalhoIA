@@ -32,9 +32,9 @@ def show_cam_on_image(img: np.ndarray,
         raise Exception(f"image_weight should be in the range [0, 1].\
                 Got: {image_weight}")
 
-    cam = (1 - image_weight) * heatmap + image_weight * img
+    cam = (1 - image_weight) * heatmap + image_weight * np.transpose(img,(1,0,2))
     cam = cam / np.max(cam)
-    return np.uint8(255 * cam)
+    return np.uint8(255 * (1-cam))
 
 
 def scale_cam_image(cam, target_size=None):
